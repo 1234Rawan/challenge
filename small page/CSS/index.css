@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;1,400;1,500&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    background-color: antiquewhite;
+    z-index: -1;
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    padding: 30px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    font-size: 21px;
+}
+
+.one {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.B,
+.D {
+    color: rgb(70, 70, 70);
+}
+
+nav .Join-Waitlist {
+    color: white;
+    text-align: center;
+    background-color: rgb(44, 112, 238);
+    width: 120px;
+    height: 26px;
+    border-radius: 3px;
+}
+
+nav .Hosterr {
+    color: white;
+    text-align: center;
+    background-color: rgb(250, 151, 81);
+    width: 180px;
+    height: 26px;
+    border-radius: 22px;
+}
+
+.Landing {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    gap: 110px;
+    margin-top: 40px;
+}
+
+.Landing .G {
+    width: 320px;
+    height: 300px;
+
+}
+
+.Landing .img-4 {
+    position: absolute;
+    margin-top: -15px;
+    transform: rotate(335deg);
+    width: 457px;
+    height: 311px;
+    margin-left: -403px;
+    z-index: -1;
+}
+
+.Landing .img-3 {
+    position: absolute;
+    margin-top: -20px;
+    transform: rotate(325deg);
+    width: 484px;
+    height: 311px;
+    margin-left: -420px;
+    z-index: -1;
+}
+
+.Landing .img-2 {
+    position: absolute;
+    margin-top: -20px;
+    transform: rotate(316deg);
+    width: 484px;
+    height: 311px;
+    margin-left: -420px;
+    z-index: -1;
+}
+
+.TEXT h1 {
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.TEXT p {
+    color: rgb(70, 70, 70);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.EMAIL{
+    flex-direction: row;
+    display: flex;
+}
+.TEXT .E {
+    color: rgb(70, 70, 70);
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.TEXT .F {
+    color: white;
+    text-align: center;
+    background-color: rgb(44, 112, 238);
+    width: 140px;
+    font-size: calc(6px + 1vw);
+    height: 40px;
+    border-radius: 3px;
+    padding-top: 9px;
+}
+
+.TEXT .C {
+    color: rgb(70, 70, 70);
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+.TEXT .img-1 {
+    margin-top: -4px;
+}
+
+.nav-two {
+    color: rgb(70, 70, 70);
+    display: flex;
+    margin-top: 30px;
+    gap: 445px;
+}
+
+@media (max-width:991px) {
+    .Landing {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav .two,
+    nav .three {
+        display: none;
+    }
+
+    .nav-two {
+        color: rgb(70, 70, 70);
+        display: flex;
+        margin-top: 30px;
+        gap: 15px;
+    }
+}
+
+@media (min-width:991px) {
+    nav .four {
+
+      display: none;
+    }
+}
+/* @media (min-width:90px) {
+    .container{
+       width: fit-content;
+    }
+} */
+@media (max-width:200px) {
+    .nav-two{
+        flex-direction: column;
+    }
+    .EMAIL{
+       flex-direction: column; 
+    }
+    .TEXT .E{
+        margin-left: 80px;
+    }
+.TEXT .F {
+  margin-left: 130px;
+}
+.images{
+    margin-left: 34px;
+}
+/* .TEXT{
+    font-size: 40px;
+} */
+}
